@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>شرکت خدمات نظافتی تابان رفاه تبریز</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0ea5e9'
+          },
+          fontFamily: {
+            sans: ['Vazirmatn', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <h1 class="text-xl font-bold text-primary"> تابان رفاه تبریز</h1>
+      <nav class="space-x-4 space-x-reverse">
+        <a href="#" class="text-gray-700 hover:text-primary">خانه</a>
+        <a href="#services" class="text-gray-700 hover:text-primary">خدمات</a>
+        <a href="#about" class="text-gray-700 hover:text-primary">درباره ما</a>
+        <a href="#contact" class="text-gray-700 hover:text-primary">تماس</a>
+      </nav>
+    </div>
+  </header>
+  <section class="bg-primary text-white py-20 text-center">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="text-4xl font-bold mb-4">تمیزی واقعی با تیم حرفه‌ای ما</h2>
+      <p class="text-lg mb-6">خدمات نظافت منزل، شرکت، راه‌پله و مشاعات با بهترین کیفیت و قیمت مناسب</p>
+      <a href="#contact" class="inline-block bg-white text-primary px-6 py-2 rounded-full hover:bg-gray-100 transition">درخواست خدمات</a>
+    </div>
+  </section>
+  <section id="services" class="max-w-6xl mx-auto px-4 py-16">
+    <h3 class="text-2xl font-bold text-right text-primary mb-8">خدمات ما</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white rounded-xl shadow p-6 text-right hover:shadow-lg transition">
+        <h4 class="font-semibold text-primary mb-2">نظافت منزل</h4>
+        <p class="text-sm text-gray-600">نظافت کامل آشپزخانه، اتاق‌ها، سرویس‌ها و پنجره‌ها با مواد استاندارد</p>
+      </div>
+      <div class="bg-white rounded-xl shadow p-6 text-right hover:shadow-lg transition">
+        <h4 class="font-semibold text-primary mb-2">نظافت شرکت‌ها</h4>
+        <p class="text-sm text-gray-600">نظافت محیط‌های اداری، میزها، کف‌پوش‌ها و سرویس‌های بهداشتی</p>
+      </div>
+      <div class="bg-white rounded-xl shadow p-6 text-right hover:shadow-lg transition">
+        <h4 class="font-semibold text-primary mb-2">نظافت راه‌پله و مشاعات</h4>
+        <p class="text-sm text-gray-600">تمیزکاری پله‌ها، نرده‌ها، آسانسور و پارکینگ با دقت بالا</p>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="bg-white py-16">
+    <div class="max-w-4xl mx-auto px-4 text-right">
+      <h3 class="text-2xl font-bold text-primary mb-4">درباره پاک‌سرویس</h3>
+      <p class="text-gray-700 leading-relaxed">
+        شرکت پاک‌سرویس با بیش از ۱۰ سال سابقه در ارائه خدمات نظافتی، با تیمی مجرب و آموزش‌دیده آماده خدمت‌رسانی به منازل، شرکت‌ها و مجتمع‌های مسکونی است. هدف ما رضایت کامل مشتریان و ارائه خدمات با کیفیت بالا است.
+      </p>
+    </div>
+  </section>
+  <section id="contact" class="bg-primary/10 py-16">
+    <div class="max-w-3xl mx-auto px-4 text-right">
+      <h3 class="text-2xl font-bold text-primary mb-4">تماس با ما</h3>
+      <p class="text-gray-700 mb-4">برای رزرو خدمات یا مشاوره رایگان، فرم زیر را پر کنید یا با ما تماس بگیرید.</p>
+      <form class="space-y-4">
+        <input type="text" placeholder="نام شما" class="w-full p-3 rounded border border-primary/30 focus:outline-none focus:ring-2 focus:ring-primary">
+        <input type="tel" placeholder="شماره تماس" class="w-full p-3 rounded border border-primary/30 focus:outline-none focus:ring-2 focus:ring-primary">
+        <textarea rows="4" placeholder="پیام شما" class="w-full p-3 rounded border border-primary/30 focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+        <button type="submit" class="bg-primary text-white px-6 py-2 rounded hover:bg-primary/90 transition">ارسال پیام</button>
+      </form>
+    </div>
+  </section>
+  <footer class="bg-white py-6 text-center text-sm text-gray-500">
+    © 2025 پاک‌سرویس | تمیزی، تخصص ماست
+  </footer>
+</body>
+</html>
