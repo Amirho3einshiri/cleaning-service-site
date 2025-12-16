@@ -1,166 +1,303 @@
-<!-- in -->
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>شرکت خدمات نظافتی تابان رفاه تبریز</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: '#0ea5e9'
-          },
-          fontFamily: {
-            sans: ['Vazirmatn', 'sans-serif'],
-          }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شرکت خدمات نظافتی تابان رفاه تبریز</title>
+    <!-- SEO Tags -->
+    <meta name="description" content="شرکت خدمات نظافتی تابان رفاه تبریز | نظافت منزل، شرکت و مشاعات با نیروهای آموزش‌دیده و مواد شوینده استاندارد.">
+    <meta name="keywords" content="نظافت تبریز, خدمات نظافت, تابان رفاه تبریز, نظافت منزل, شرکت خدماتی">
+    <meta name="author" content="Taban Refah Tabriz">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Vazirmatn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link rel="icon" href="cleaning.png" type="image/png">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0ea5e9', // Sky Blue 500
+                    },
+                    fontFamily: {
+                        sans: ['Vazirmatn', 'sans-serif'],
+                    },
+                }
+            }
         }
-      }
-    }
-  </script>
-  <link rel="icon" type="image/x-icon" href="cleaning.png">
-  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
+    </script>
+    <style>
+        /* Custom style for the bubble effect */
+        @keyframes rise {
+            0% { transform: translateY(0); opacity: 0.5; }
+            100% { transform: translateY(-120vh); opacity: 0; }
+        }
+        .animate-rise {
+            animation: rise 15s linear infinite;
+        }
+    </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
-  <header class="bg-white shadow sticky top-0 z-50">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-      <h1 class="text-xl font-bold text-primary"> تابان رفاه تبریز</h1>
-      <nav class="space-x-4 space-x-reverse">
-        <a href="#" class="text-gray-700 hover:text-primary">خانه</a>
-        <a href="#services" class="text-gray-700 hover:text-primary">خدمات</a>
-        <a href="#about" class="text-gray-700 hover:text-primary">درباره ما</a>
-        <a href="#contact" class="text-gray-700 hover:text-primary">تماس</a>
-      </nav>
-    </div>
-  </header>
-  <div class="bg-yellow-100 text-yellow-800 text-center py-2 px-4">
-    🎉 تخفیف ویژه تابستانی برای خدمات نظافت راه‌پله و مشاعات — فقط تا پایان هفته!
-  </div>  
-  <section class="bg-primary text-white py-20 text-center">
-    <div class="max-w-3xl mx-auto px-4">
-      <h2 class="text-4xl font-bold mb-4">تمیزی واقعی با تیم حرفه‌ای ما</h2>
-      <p class="text-lg mb-6">خدمات نظافت منزل، شرکت، راه‌پله و مشاعات با بهترین کیفیت و قیمت مناسب</p>
-      <a href="#contact" class="inline-block bg-white text-primary px-6 py-2 rounded-full hover:bg-gray-100 transition">درخواست خدمات و رزرو</a>
-    </div>
-  </section>
-  <section id="services" class="max-w-6xl mx-auto px-4 py-16">
-    <h3 class="text-2xl font-bold text-right text-primary mb-8">خدمات ما</h3>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="bg-white rounded-xl shadow p-6 text-right hover:shadow-lg transition">
-        <h4 class="font-semibold text-primary mb-2">نظافت منزل</h4>
-        <p class="text-sm text-gray-600">نظافت کامل آشپزخانه، اتاق‌ها، سرویس‌ها و پنجره‌ها با مواد استاندارد</p>
-      </div>
-      <div class="bg-white rounded-xl shadow p-6 text-right hover:shadow-lg transition">
-        <h4 class="font-semibold text-primary mb-2">نظافت شرکت‌ها</h4>
-        <p class="text-sm text-gray-600">نظافت محیط‌های اداری، میزها، کف‌پوش‌ها و سرویس‌های بهداشتی</p>
-      </div>
-      <div class="bg-white rounded-xl shadow p-6 text-right hover:shadow-lg transition">
-        <h4 class="font-semibold text-primary mb-2">نظافت راه‌پله و مشاعات</h4>
-        <p class="text-sm text-gray-600">تمیزکاری پله‌ها، نرده‌ها، آسانسور و پارکینگ با دقت بالا</p>
-      </div>
-    </div>
-  </section>
-  <section class="max-w-6xl mx-auto px-4 py-16">
-    <h3 class="text-2xl font-bold text-right text-primary mb-8">چرا تابان رفاه تبریز؟</h3>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-right">
-      <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
-        <div class="text-4xl text-primary mb-4">🧼</div>
-        <h4 class="font-semibold text-primary mb-2">مواد شوینده استاندارد</h4>
-        <p class="text-sm text-gray-600">استفاده از مواد باکیفیت و ایمن برای سلامت شما و محیط زیست</p>
-      </div>
-      <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
-        <div class="text-4xl text-primary mb-4">👨‍🔧</div>
-        <h4 class="font-semibold text-primary mb-2">پرسنل آموزش‌دیده</h4>
-        <p class="text-sm text-gray-600">تیم حرفه‌ای با اخلاق کاری بالا و تجربه در انواع خدمات نظافتی</p>
-      </div>
-      <div class="bg-white rounded-xl shadow p-6 hover:shadow-lg transition">
-        <div class="text-4xl text-primary mb-4">⏱️</div>
-        <h4 class="font-semibold text-primary mb-2">سرعت و دقت</h4>
-        <p class="text-sm text-gray-600">انجام خدمات در زمان مقرر با کیفیت تضمینی</p>
-      </div>
-    </div>
-  </section>  
-  <section id="about" class="bg-white py-16">
-    <div class="max-w-4xl mx-auto px-4 text-right">
-      <h3 class="text-2xl font-bold text-primary mb-4">درباره تابان رفاه تبریز</h3>
-      <p class="text-gray-700 leading-relaxed">
-        شرکت پاک‌سرویس با بیش از ۱۰ سال سابقه در ارائه خدمات نظافتی، با تیمی مجرب و آموزش‌دیده آماده خدمت‌رسانی به منازل، شرکت‌ها و مجتمع‌های مسکونی است. هدف ما رضایت کامل مشتریان و ارائه خدمات با کیفیت بالا است.
-      </p>
-    </div>
-  </section>
-  <section id="testimonials" class="bg-white py-16">
-    <div class="max-w-6xl mx-auto px-4 text-right">
-      <h3 class="text-2xl font-bold text-primary mb-8">نظرات مشتریان</h3>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div class="bg-primary/5 p-6 rounded-xl shadow text-gray-700">
-          <p class="mb-4">«واقعا از خدمات نظافت منزل راضی بودم. تیم بسیار حرفه‌ای و خوش‌برخورد بودند.»</p>
-          <p class="text-sm text-primary font-semibold">- سارا از تبریز</p>
-        </div>
-        <div class="bg-primary/5 p-6 rounded-xl shadow text-gray-700">
-          <p class="mb-4">«نظافت شرکت ما با دقت و سرعت انجام شد. حتما دوباره از خدمات استفاده می‌کنیم.»</p>
-          <p class="text-sm text-primary font-semibold">- علی از تبریز</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="faq" class="bg-white py-16">
-    <div class="max-w-4xl mx-auto px-4 text-right">
-      <h3 class="text-2xl font-bold text-primary mb-8">سوالات متداول</h3>
-      <div class="space-y-6">
-        <div class="bg-primary/5 p-4 rounded shadow">
-          <h4 class="font-semibold text-primary mb-2">آیا خدمات شامل مواد شوینده هم هست؟</h4>
-          <p class="text-sm text-gray-700">بله، تمامی خدمات با مواد شوینده استاندارد و ایمن ارائه می‌شوند.</p>
-        </div>
-        <div class="bg-primary/5 p-4 rounded shadow">
-          <h4 class="font-semibold text-primary mb-2">چطور می‌تونم خدمات رو رزرو کنم؟</h4>
-          <p class="text-sm text-gray-700">از طریق فرم تماس در پایین صفحه یا تماس تلفنی با ما.</p>
-        </div>
-        <div class="bg-primary/5 p-4 rounded shadow">
-          <h4 class="font-semibold text-primary mb-2">آیا امکان ارائه خدمات در روزهای تعطیل وجود دارد؟</h4>
-          <p class="text-sm text-gray-700">بله، با هماهنگی قبلی امکان ارائه خدمات در روزهای تعطیل نیز وجود دارد.</p>
-        </div>
-      </div>
-    </div>
-  </section>  
-  <section id="contact" class="bg-primary/10 py-16">
-    <div class="max-w-3xl mx-auto px-4 text-right">
-      <h3 class="text-2xl font-bold text-primary mb-4">تماس با ما</h3>
-      <p class="text-gray-700 mb-4">برای رزرو خدمات یا مشاوره رایگان، فرم زیر را پر کنید یا با ما تماس بگیرید.</p>
-      <form class="space-y-4">
-        <input type="text" placeholder="نام شما" class="w-full p-3 rounded border border-primary/30 focus:outline-none focus:ring-2 focus:ring-primary">
-        <input type="tel" placeholder="شماره تماس" class="w-full p-3 rounded border border-primary/30 focus:outline-none focus:ring-2 focus:ring-primary">
-        <textarea rows="4" placeholder="پیام شما" class="w-full p-3 rounded border border-primary/30 focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
-        <button type="submit" class="bg-primary text-white px-6 py-2 rounded hover:bg-primary/90 transition">ارسال پیام</button>
-      </form>
-    </div>
-  </section>
-  <footer class="bg-white py-6 text-center text-sm text-gray-500">
-    © 2025 تابان رفاه تبریز | تمیزی، تخصص ماست
-  </footer>
-    <a href="https://wa.me/989123456789" target="_blank"
-    class="fixed bottom-6 left-6 bg-green-500 text-white px-4 py-3 rounded-full shadow-lg flex items-center gap-2 hover:bg-green-600 transition">
-   <span>💬 واتساپ</span>
- </a>
- <button id="backToTop" 
-  class="hidden fixed bottom-6 right-6 bg-primary text-white px-4 py-2 rounded-full shadow-lg hover:bg-primary/90 transition">
-  ⬆️ بالا
-</button>
-<script>
-  const backToTop = document.getElementById("backToTop");
+<body class="font-sans bg-gray-50 text-gray-800">
 
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 300) {
-      backToTop.classList.remove("hidden");
-    } else {
-      backToTop.classList.add("hidden");
-    }
-  });
+    <!-- 🎈 NEW: Floating Bubbles for Cleanliness Effect (Positioned before content for z-index) -->
+    <div class="fixed inset-0 -z-10 overflow-hidden pointer-events-none" id="bubbles"></div>
 
-  backToTop.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
-</script>
+
+    <!-- Header and Navigation -->
+    <header class="sticky top-0 bg-white shadow-md z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+            <div class="text-2xl font-bold text-primary">
+                تابان رفاه تبریز
+            </div>
+            <div class="hidden md:flex space-x-6 rtl:space-x-reverse">
+                <a href="#home" class="text-gray-600 hover:text-primary transition">خانه</a>
+                <a href="#services" class="text-gray-600 hover:text-primary transition">خدمات</a>
+                <a href="#about" class="text-gray-600 hover:text-primary transition">درباره ما</a>
+                <a href="#contact" class="text-gray-600 hover:text-primary transition">تماس</a>
+            </div>
+            <!-- Mobile Menu Button (Placeholder for actual JS implementation) -->
+            <button class="md:hidden text-gray-600 hover:text-primary">
+                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Summer Discount Banner -->
+    <div class="bg-yellow-100 border-b-2 border-yellow-400 text-center p-3 text-sm font-medium text-yellow-800">
+        🎉 تخفیف ویژه تابستانی برای خدمات نظافت راه‌پله و مشاعات — فقط تا پایان هفته!
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="relative py-20 md:py-32 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-4">
+                    تمیزی واقعی با تیم حرفه‌ای ما
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 mb-10 max-w-3xl mx-auto">
+                    خدمات نظافت منزل، شرکت، راه‌پله و مشاعات با کیفیت بالا و قیمت منصفانه در تبریز.
+                </p>
+                <a href="#contact" class="inline-block bg-primary text-white font-bold py-3 px-10 rounded-full text-lg shadow-lg hover:bg-blue-600 transition transform hover:scale-105">
+                    درخواست خدمات و رزرو
+                </a>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-16 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center mb-12 border-b-4 border-primary inline-block mx-auto pb-2">خدمات ما</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Service 1: House Cleaning -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-primary">
+                        <h3 class="text-2xl font-bold mb-3 text-primary">نظافت منزل</h3>
+                        <p class="text-gray-600">نظافت کامل آشپزخانه، اتاق‌ها، سرویس‌های بهداشتی و شستشوی پنجره‌ها با استفاده از مواد استاندارد.</p>
+                    </div>
+                    <!-- Service 2: Company Cleaning -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-primary">
+                        <h3 class="text-2xl font-bold mb-3 text-primary">نظافت شرکت‌ها</h3>
+                        <p class="text-gray-600">پاکسازی محیط کار، میزها، کف‌پوش‌ها، و محوطه داخلی شرکت‌ها برای ایجاد فضایی دلپذیر.</p>
+                    </div>
+                    <!-- Service 3: Stairwell & Common Areas -->
+                    <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-t-4 border-primary">
+                        <h3 class="text-2xl font-bold mb-3 text-primary">نظافت راه‌پله و مشاعات</h3>
+                        <p class="text-gray-600">نظافت دقیق پله‌ها، نرده‌ها، آسانسورها و پارکینگ با دقت بالا و نظم کامل.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center mb-12">چرا تابان رفاه تبریز؟</h2>
+                <div class="flex flex-wrap justify-around gap-8">
+                    <!-- Advantage 1 -->
+                    <div class="text-center p-4 w-full sm:w-64">
+                        <div class="text-5xl text-primary mb-3">🧼</div>
+                        <h4 class="text-xl font-semibold mb-2">مواد شوینده استاندارد</h4>
+                        <p class="text-gray-600">استفاده از مرغوب‌ترین و ایمن‌ترین مواد برای حفظ سلامت شما و سطوح.</p>
+                    </div>
+                    <!-- Advantage 2 -->
+                    <div class="text-center p-4 w-full sm:w-64">
+                        <div class="text-5xl text-primary mb-3">🎓</div>
+                        <h4 class="text-xl font-semibold mb-2">پرسنل آموزش‌دیده</h4>
+                        <p class="text-gray-600">تیم حرفه‌ای با اخلاق کاری بالا و تجربه کافی در انجام امور نظافتی.</p>
+                    </div>
+                    <!-- Advantage 3 -->
+                    <div class="text-center p-4 w-full sm:w-64">
+                        <div class="text-5xl text-primary mb-3">⏱️</div>
+                        <h4 class="text-xl font-semibold mb-2">سرعت و دقت</h4>
+                        <p class="text-gray-600">تضمین کیفیت کار و تحویل خدمات در زمان مقرر بدون تأخیر.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-16 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-10">
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-bold mb-6 border-b-4 border-primary inline-block pb-2">درباره ما</h2>
+                    <!-- IMPORTANT: Preserving the original text mentioning Pak Service -->
+                    <p class="text-lg text-gray-700 mb-4">
+                        شرکت **پاک‌سرویس** با بیش از ۱۰ سال سابقه درخشان در ارائه خدمات نظافت در منطقه تبریز، متعهد به ارائه بالاترین سطح رضایت مشتری است. ما باور داریم که نظافت فقط تمیز کردن نیست، بلکه ایجاد محیطی سالم و آرام برای زندگی و کار شماست.
+                    </p>
+                    <p class="text-md text-gray-600">
+                        ما در تابان رفاه تبریز (پاک‌سرویس)، به طور مستمر در حال به‌روزرسانی روش‌ها و تجهیزات خود هستیم تا بهترین خدمات را با کمترین دردسر برای شما به ارمغان بیاوریم.
+                    </p>
+                </div>
+                <div class="md:w-1/2">
+                    <!-- Placeholder for an Image of the Team/Office -->
+                    <div class="bg-white p-6 rounded-lg shadow-xl text-center border-4 border-dashed border-gray-300">
+                        <p class="text-xl text-gray-500">تصویر تیم حرفه‌ای یا لوگو در اینجا قرار می‌گیرد.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-16 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center mb-12">نظرات مشتریان</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-blue-50 p-6 rounded-xl shadow-lg border-r-4 border-primary">
+                        <p class="text-lg italic mb-4">"از نظافت منزل نهایت رضایت را داشتم. همه جا برق می‌زد و تیم بسیار خوش‌برخورد بودند."</p>
+                        <div class="text-right font-semibold text-primary">— سارا از تبریز</div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="bg-blue-50 p-6 rounded-xl shadow-lg border-r-4 border-primary">
+                        <p class="text-lg italic mb-4">"خدمات نظافت شرکت ما فوق‌العاده سریع و دقیق انجام شد. دیگر نگران تمیزی دفتر نیستم."</p>
+                        <div class="text-right font-semibold text-primary">— علی از تبریز</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="py-16 bg-gray-50">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center mb-10">سوالات متداول</h2>
+                <div class="space-y-4">
+                    <!-- FAQ 1 -->
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="font-bold text-lg text-primary">آیا مواد شوینده جزو خدمات است؟</h4>
+                        <p class="text-gray-600 mt-1">بله، تمام خدمات نظافتی ما شامل تأمین مواد شوینده استاندارد و ایمن می‌باشد.</p>
+                    </div>
+                    <!-- FAQ 2 -->
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="font-bold text-lg text-primary">نحوه رزرو خدمات چگونه است؟</h4>
+                        <p class="text-gray-600 mt-1">شما می‌توانید از طریق فرم تماس در پایین صفحه یا تماس تلفنی اقدام به رزرو خدمات نمایید.</p>
+                    </div>
+                    <!-- FAQ 3 -->
+                    <div class="bg-white p-4 rounded-lg shadow">
+                        <h4 class="font-bold text-lg text-primary">آیا امکان دریافت خدمات در روزهای تعطیل وجود دارد؟</h4>
+                        <p class="text-gray-600 mt-1">بله، با هماهنگی قبلی، امکان ارائه خدمات در روزهای تعطیل نیز میسر است.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center mb-10 border-b-4 border-primary inline-block mx-auto pb-2">تماس با ما</h2>
+                <form class="bg-gray-50 p-8 rounded-xl shadow-2xl space-y-6" 
+                      action="https://formspree.io/f/your_form_id" method="POST"> <!-- **توجه: action را با آدرس واقعی خود جایگزین کنید** -->
+                    
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">نام:</label>
+                        <input type="text" id="name" name="name" required 
+                               class="w-full p-3 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary transition" placeholder="نام و نام خانوادگی">
+                    </div>
+                    <div>
+                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">شماره تماس:</label>
+                        <input type="tel" id="phone" name="phone" required 
+                               class="w-full p-3 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary transition" placeholder="مثال: 0912xxxxxxx">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">پیام یا درخواست شما:</label>
+                        <textarea id="message" name="message" rows="4" required 
+                                  class="w-full p-3 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary transition" placeholder="جزئیات خدمات مورد نیاز خود را بنویسید..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-primary text-white font-bold py-3 rounded-lg text-lg hover:bg-blue-600 transition shadow-md">
+                        ارسال پیام
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t mt-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center">
+            <p class="text-sm text-gray-600">
+                © 2025 تابان رفاه تبریز | تمیزی، تخصص ماست
+            </p>
+            <div class="mt-2 text-gray-400 text-xs">
+                ساخته‌شده با ❤️ در تبریز
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fixed Elements (WhatsApp & Back to Top) -->
+    
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/989123456789" target="_blank" 
+       class="fixed bottom-32 left-6 bg-green-500 text-white p-4 rounded-full shadow-2xl hover:bg-green-600 transition z-40 flex items-center space-x-2 rtl:space-x-reverse">
+        <span class="hidden sm:inline">💬 واتساپ</span>
+        <div class="sm:hidden text-xl">💬</div>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" 
+            class="fixed bottom-20 left-6 bg-gray-700 text-white p-3 rounded-full shadow-xl hover:bg-gray-900 transition z-40 hidden">
+        <svg class="w-6 h-6 transform -rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+    </button>
+
+    <!-- Scripts for Interactivity -->
+    <script>
+        // 1. Back to Top Logic
+        const backToTopButton = document.getElementById("backToTop");
+        window.onscroll = function() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                backToTopButton.classList.remove("hidden");
+            } else {
+                backToTopButton.classList.add("hidden");
+            }
+        };
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // 2. Bubble Generator Script (NEW)
+        const container = document.getElementById('bubbles');
+        const bubbleCount = 15; // You can adjust this number
+        for (let i = 0; i < bubbleCount; i++) {
+            const bubble = document.createElement('div');
+            const size = Math.random() * 40 + 10; // Size between 10px and 50px
+            
+            bubble.className = 'absolute rounded-full bg-blue-200 opacity-50 transition-opacity duration-700';
+            
+            bubble.style.width = `${size}px`;
+            bubble.style.height = `${size}px`;
+            bubble.style.left = `${Math.random() * 100}%`;
+            bubble.style.bottom = `-${size}px`;
+            bubble.style.animation = `rise ${Math.random() * 10 + 8}s ease-out infinite`; // Slower and smoother rise
+            
+            container.appendChild(bubble);
+        }
+    </script>
+
 </body>
 </html>
